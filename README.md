@@ -8,11 +8,10 @@ This is a private repository. Access is currently restricted.
 
 ### How to Request Access
 To request access to this project:
-- Email: [your-email]
-- LinkedIn: [your-profile]
-- Contact Form: [your-website]
+- Email: efleuran@gmu.edu, efleuran@unc.edu
+- Contact Form: emmanuelfleurantin.info/
 
 ## Project Overview
 - Purpose: Given the highly nonlinear nature of specific dynamical systems, we employed a diverse array of computational tools and software packages to generate accurate 3D renderings and perform the necessary structural thickening for printing. 
 - Technologies used: Mathematica
-- Key features: [List main features]
+- Key features: 1) Enable physical inspection of abstract mathematical objects, potentially revealing insights into complex systems that are difficult to discern from purely digital representations; 2) Accurate computational visualization techniques with broad applicability.
