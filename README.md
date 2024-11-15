@@ -47,10 +47,10 @@ Given the highly nonlinear nature of specific dynamical systems, we employ a div
 - [X] Preliminary testing
 - [ ] Optimization of structural properties
 
-### Phase 3 - Implementation 📋
+### Phase 3 - Implementation 🚧
+- [X] Publication preparation
 - [ ] Full system integration
 - [ ] Documentation
-- [ ] Publication preparation
 
 <div align="center">
   <i>Last updated: November 2024</i>
