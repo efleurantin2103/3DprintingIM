@@ -1,5 +1,4 @@
 name: 3D Printing IM Build
-
 on:
   push:
     branches: [ "main" ]
@@ -28,27 +27,22 @@ jobs:
           pip install meshio trimesh pygltflib
           pip install pytest pytest-cov
       
+      # Install tree command
+      - name: Install tree
+        run: sudo apt-get install -y tree
+      
       # Run Python tests
       - name: Run Python Tests
         run: |
-          pytest tests/ --cov=./ --cov-report=xml || true
+          pytest tests/ --cov=./ --cov-report=xml
           
       # Setup MATLAB
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
-        
-      # Install MATLAB dependencies
-      - name: Install MATLAB Add-Ons
-        uses: matlab-actions/run-command@v1
         with:
-          command: |
-            % Install required toolboxes
-            matlab.addons.install('Optimization Toolbox');
-            matlab.addons.install('ODE Suite');
-            matlab.addons.install('Curve Fitting Toolbox');
-            matlab.addons.install('Global Optimization Toolbox');
-            matlab.addons.install('Parallel Computing Toolbox');
-            
+          # Specify any required MATLAB release
+          release: R2023b
+        
       # Run MATLAB Tests
       - name: Run MATLAB Tests
         uses: matlab-actions/run-tests@v1
@@ -74,7 +68,7 @@ jobs:
       - name: Validate Meshes
         run: |
           echo "Validating mesh integrity with Python..."
-          python scripts/validate_meshes.py || true
+          python scripts/validate_meshes.py
           
       # Status update
       - name: Project status
