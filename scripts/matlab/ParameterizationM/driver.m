@@ -10,17 +10,11 @@ zeta = 0.1;
 epsilon = 0.25;
 
 %Equilibria:
-p0 = [0;
-      0;
-      -1.1050];
+p0 = [0; 0; -1.1050];
 
-p1 = [0;
-      0;
-      -0.83824];
+p1 = [0; 0; -0.83824];
 
-p2 = [0;
-      0;
-      1.9433];
+p2 = [0; 0; 1.9433];
 
 %Choose an equilibrium point to compute manifolds:
 p = p1;
@@ -50,7 +44,6 @@ P = zeros(N+1, N+1, 3);
 SM = computeStableM(p,Dfp,lambda_s1, lambda_s2, xi_s1, xi_s2, N, scale,epsilon, alpha, gamma, delta, beta, zeta);
 
 numR = 20;
-
 numTheta = 50;
 
 the_rs = linspace(0.001, 1, numR);
