@@ -18,9 +18,9 @@ norm(reshape(P(2, 1, :),[3, 1]), inf)]);
 for order = 2:N
   order
   theseAbs = [];
-   for vader = 0:order
-    n1 = order - vader;
-    n2 = vader;
+   for steps = 0:order
+    n1 = order - steps;
+    n2 = steps;
     A = Dfp - (n1*lambda_s1 + n2*lambda_s2)*Id;
     sum1 = 0;
     sum2 = 0;
