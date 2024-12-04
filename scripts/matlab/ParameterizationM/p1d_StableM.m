@@ -1,12 +1,7 @@
 clear all
 format long
 
-alpha = 0.95;
-beta = 0.7;
-delta = 3.5;
-gamma = 0.6;
-zeta = 0.1;
-epsilon = 0.25;
+alpha = 0.95; beta = 0.7; delta = 3.5; gamma = 0.6; zeta = 0.1; epsilon = 0.25;
 
 N = 50;
 
