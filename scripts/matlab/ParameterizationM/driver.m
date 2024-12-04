@@ -2,18 +2,11 @@ clear all
 format long
 
 %Langford Parameters:
-alpha = 0.95;
-beta = 0.7;
-delta = 3.5;
-gamma = 0.6;
-zeta = 0.1;
-epsilon = 0.25;
+alpha = 0.95; beta = 0.7; delta = 3.5; gamma = 0.6; zeta = 0.1; epsilon = 0.25;
 
 %Equilibria:
-p0 = [0; 0; -1.1050];
-
-p1 = [0; 0; -0.83824];
-
+p0 = [0; 0; -1.1050]; 
+p1 = [0; 0; -0.83824]; 
 p2 = [0; 0; 1.9433];
 
 %Choose an equilibrium point to compute manifolds:
